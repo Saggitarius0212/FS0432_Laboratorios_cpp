@@ -1,0 +1,30 @@
+Ingrese -1 para terminar... 
+Ingrese nota. 
+95
+Ingrese nota. 
+80
+Ingrese nota. 
+45
+Ingrese nota. 
+110
+Ingrese nota. 
+-5
+Ingrese nota. 
+70
+Ingrese nota. 
+89
+Ingrese nota. 
+-1
+Resultados: 
+95
+80
+45
+70
+89
+Reprobado(s): 1
+Aprobado(s): 3
+Sobresaliente(s): 1
+Promedio: 75.8
+Máximo: 95
+Mínimo: 45
+
