@@ -1,0 +1,14 @@
+Ingrese el número de subintervalos. 
+256
+Resultados... 
+
+Integral de 4/(1+x²) en [0,1]
+
+Trapecio compuesto: 3.1415901104582815151
+Simpson compuesto: 3.1415926535897935601
+Valor Exacto: 3.141592653589793116
+
+Error Trapecio: 2.543e-06
+Error Simpson: 4.441e-16
+
+Fin de programa... 
