@@ -1,4 +1,4 @@
 #pragma once
 
-double f_derivada(double x, double t);
-double f(double t);
+double f(double x, double t);
+double exacta(double t);

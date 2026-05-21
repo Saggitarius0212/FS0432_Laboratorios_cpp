@@ -4,34 +4,40 @@
 
 int main(){
 
-int N;
+std::vector<double> t;
+std::vector<double> xn;
+std::vector<double> xa;
+std::vector<double> error;
 
-std::cout << "Ingrese cantida de N nodos a evaluar. " << std::endl;
+double ti = 0;
+double tf = 10;
+double tn = 0;
 
-std::cin >> N;
+double xi = exacta(ti);
+double h = 0.1;
 
+t.push_back(ti);
 
-std::vector<double> t(N);
-std::vector<double> xn(N);
-std::vector<double> xa(N);
-std::vector<double> error(N);
+int i = 1;
 
+while (tn != 10){
 
-
-
-
-
-
-
-
-
-
-
-
+	tn = ti + i*h;
+	t.push_back(tn);
+	i++;
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+return 0;
 }
