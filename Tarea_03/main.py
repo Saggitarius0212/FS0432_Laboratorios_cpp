@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 ti = 0
-tf = 100
+tf = 40
 
 h = 0.001
 
@@ -48,14 +48,15 @@ for rk4 in sol_rk4:
 fig = plt.figure(figsize=(10,10), dpi=130)
 ax = fig.add_subplot(111, projection="3d")
 
-ax.plot(x_euler, y_euler, z_euler, linewidth=0.7)
-ax.plot(x_rk2, y_rk2, z_rk2, linewidth=0.7, color="orange")
-ax.plot(x_rk4, y_rk4, z_rk4, linewidth=0.7, color="red")
+ax.plot(x_euler, y_euler, z_euler, label="Euler", linewidth=0.7, color="blue")
+ax.plot(x_rk2, y_rk2, z_rk2, label="RK2", linewidth=0.7, color="orange")
+ax.plot(x_rk4, y_rk4, z_rk4, label="RK4", linewidth=0.7, color="red")
 
 
 ax.set_xlabel("Eje X")
 ax.set_ylabel("Eje Y")
 ax.set_zlabel("Eje Z")
 
+plt.legend()
 plt.show()
 
