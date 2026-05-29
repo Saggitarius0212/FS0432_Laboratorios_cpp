@@ -15,4 +15,5 @@ g++ main.cpp funcion.cpp -o main \
   -Wl,-rpath,/home/andre_hernandez/miniconda3/envs/Fis-Comp/lib
   
 Ejecutar como:
+
 ./main

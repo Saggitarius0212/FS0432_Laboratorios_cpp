@@ -41,8 +41,6 @@ void euler(std::vector<double>& x, std::vector<double>& t, double xi,
 		xn = xn + h*f(xn, tn);
 		x.push_back(xn);		
 	}
-	std::cout << "Tiempo" << t.size() << std::endl;
-	std::cout << "Euler" << x.size() << std::endl;
 }
 
 void analitico(std::vector<double>& x, double ti,
@@ -59,7 +57,6 @@ void analitico(std::vector<double>& x, double ti,
 		xn = exacta(tn);
 		x.push_back(xn);
 	}
-	std::cout << "Analitica" << x.size() << std::endl;
 }
 
 int main(){
@@ -129,7 +126,8 @@ plt::title("Soluciones en función del tiempo.");
 plt::legend();
 plt::grid(true);
 
-plt::show();
+plt::save("solucion_euler.png");
+std::cout << "Archivo solucion_euler.png descargado..." << std::endl;
 
 plt::figure();
 
@@ -142,7 +140,8 @@ plt::title("Error absoluto en función del tiempo.");
 plt::legend();
 plt::grid(true);
 
-plt::show();
+plt::save("error_local.png");
+std::cout << "Archivo error_local.png descargado..." << std::endl;
 
 return 0;
 }
