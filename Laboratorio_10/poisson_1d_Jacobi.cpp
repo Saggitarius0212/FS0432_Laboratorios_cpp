@@ -36,15 +36,15 @@ double solucion_exacta(double x)
 
 int main() 
 {
-    const int N = 10; // numero de subintervalos
+    const int N = 1000; // numero de subintervalos
     const double a = 0.0;
-    const double b = 1.0;
+    const double b = 10.0;
     const double h = (b - a) / N;
 
     const double alpha = 0.0;       // u(a)
     const double beta = 0.0;        // u(b)
 
-    const int max_iter = 500;
+    const int max_iter = 200000;
     const double tol = 1e-10;
 
     std::vector<double> x(N + 1);
@@ -71,6 +71,8 @@ int main()
     while (iter < max_iter && error > tol) 
     {
 	
+	error_aux.clear();
+	
 	for (int i = 1; i < N; i++){
 		
 		u_new[i] = (0.5)*(u[i-1] + u[i+1] - h*h*fuente(x[i]));		
@@ -88,9 +90,6 @@ int main()
 	error = *std::max_element(error_aux.begin(), error_aux.end());
 	
 	iter ++;
-	
-	std::cout << "Iteraciones: " << iter << std::endl;
-    	std::cout << "Error final: " << error << std::endl; 
 	
         /* Su código aquí */
         
@@ -114,7 +113,26 @@ int main()
     Grafique la solución numérica y 
     la solución  exacta usando matplotlib-cpp.
 
-    */          
+    */       
+    
+    std::vector<double> malla;
+    
+    for (int i = 0; i <= N; i++){
+    	malla.push_back(a + i*h);
+    }
+    
+    plt::figure();
+    
+    plt::plot(malla, u, {{"label", "Solución Numérica"}});
+    plt::plot(malla, u_exacta, {{"label", "Solución Exacta"}});
+    plt::title("Gráfica de solución numérica y exacta");
+    plt::xlabel("X");
+    plt::ylabel("U(x)");
+    plt::legend();
+    
+    plt::show();
+    
+       
 
     return 0;
 }
