@@ -8,7 +8,7 @@ colocarlo en el mismo directorio que este código.
 
 Compilar como:
 
-g++ poisson_1d_Jacobi.cpp -o poisson_1d_Jacobi.x \
+g++ poisson_1d_GaussSeidel.cpp -o poisson_1d_GaussSeidel.x \
     -I$CONDA_PREFIX/include/python3.11 \
     -I$(python -c "import numpy; print(numpy.get_include())") \
     -L$CONDA_PREFIX/lib \
@@ -90,7 +90,7 @@ int main()
 	
 	for (int i = 1; i < N; i++){
 		
-		u_new[i] = (0.5)*(u[i-1] + u[i+1] - h*h*fuente(x[i]));		
+		u_new[i] = (0.5)*(u_new[i-1] + u[i+1] - h*h*fuente(x[i]));		
 	}
 		
 	error = calcular_error(u, u_new, N);
@@ -141,28 +141,28 @@ int main()
     
     plt::figure();
     
-    plt::plot(malla_N, u, {{"label", "Solución Jacobi"}});
+    plt::plot(malla_N, u, {{"label", "Solución GaussSeidel"}});
     plt::plot(malla_N, u_exacta, {{"label", "Solución Exacta"}});
-    plt::title("Gráfica de solución Jacobi y exacta");
+    plt::title("Gráfica de solución GaussSeidel y exacta");
     plt::xlabel("X");
     plt::ylabel("U(x)");
     plt::legend();
     
-    plt::save("solucion_jacobi.png");
-    std::cout << "solucion_jacobi.png descargado..." << std::endl;
+    plt::save("solucion_gaussseidel.png");
+    std::cout << "solucion_gaussseidel.png descargado..." << std::endl;
     
     // Gráfica de error
     
     plt::figure();
     
     plt::plot(malla_T, error_conver, {{"label", "Error de Convergencia"}});
-    plt::title("Gráfica de error de método Jacobi");
+    plt::title("Gráfica de error de método GaussSeidel");
     plt::xlabel("Iteraciones");
     plt::ylabel("Error");
     plt::legend();
     
-    plt::save("error_jacobi.png");
-    std::cout << "error_jacobi.png descargado..." << std::endl;
+    plt::save("error_gaussseidel.png");
+    std::cout << "error_gaussseidel.png descargado..." << std::endl;
     
     plt::show();
 
