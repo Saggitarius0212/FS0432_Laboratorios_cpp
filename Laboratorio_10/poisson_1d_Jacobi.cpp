@@ -155,11 +155,10 @@ int main()
     
     plt::figure();
     
-    plt::plot(malla_T, error_conver, {{"label", "Error de Convergencia"}});
+    plt::semilogy(malla_T, error_conver);
     plt::title("Gráfica de error de método Jacobi");
     plt::xlabel("Iteraciones");
     plt::ylabel("Error");
-    plt::legend();
     
     plt::save("error_jacobi.png");
     std::cout << "error_jacobi.png descargado..." << std::endl;

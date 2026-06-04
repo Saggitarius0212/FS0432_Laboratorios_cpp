@@ -155,11 +155,10 @@ int main()
     
     plt::figure();
     
-    plt::plot(malla_T, error_conver, {{"label", "Error de Convergencia"}});
+    plt::semilogy(malla_T, error_conver);
     plt::title("Gráfica de error de método GaussSeidel");
     plt::xlabel("Iteraciones");
     plt::ylabel("Error");
-    plt::legend();
     
     plt::save("error_gaussseidel.png");
     std::cout << "error_gaussseidel.png descargado..." << std::endl;
