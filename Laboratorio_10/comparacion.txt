@@ -1,0 +1,21 @@
+Comparación entre métodos
+
+Ambos poseen los siguientes condiciones
+Número de subintervalos: N = 200
+Máximo de iteraciones: max_iter = 500000
+Inicio de intervalo evaluado: a = 0.0
+Final de intervalo evaluado: b = 1.0
+Tolerancia de diferencia entre aproximaciones: tol = 1e-10
+
+Comparación de número de iteraciones
+El método Jacobi: 95127
+El método Gauss-Seidel: 50373
+
+Se puede ver que el método Gauss-Seidel consigue más rápido llegar al valor de tolerancia, o diferencia entre aproximaciones. Esto indica que converge más rápidamente y que necesita menos recursos computacionales para aproximarse al resultado deseado que el método de Jacobi.
+
+Comparación de error de convergencia
+El método Jacobi: 1.27296e-06
+El método Gauss-Seidel: 1.67817e-06
+
+Se puede ver que el método Jacobi, en este caso y con las condiciones anteriormente mencionadas, alcanza un error contra los valores analíticos más bajo, pero la diferencia entre ambos es mínima, lo cual no justifica la mayor cantidad de recursos computacionales que este método requiere en comparación con el de Gauss-Seidel. Además, es importante recalcar que dependiendo de la configuración uno u otro método puede ser más exacto, pero el método Gauss-Seidel siempre mantendrá una relación exactitud-recursos más beneficioso que el método Jacobi.
+
