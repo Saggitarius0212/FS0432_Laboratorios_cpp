@@ -67,7 +67,7 @@ for n in range(int(t_final/dt) + 1):
 
 	aplicar_frontera(u,n*dt)
 
-	if n % 20 == 0 :
+	if n % snapshot_interval == 0 :
 		snapshots.append(np.copy(u))
 		tiempos.append(n*dt)
 
