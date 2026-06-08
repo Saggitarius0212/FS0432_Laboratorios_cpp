@@ -10,15 +10,15 @@ from matplotlib.animation import FuncAnimation
 Lx = 1.0
 Ly = 1.0
 
-Nx = 50
-Ny = 50
+Nx = 100
+Ny = 100
 
 kappa = 1.0
 
 h = Lx / Nx
 
 r = 0.20
-t_final = 1
+t_final = 0.1
 snapshot_interval = 20
 
 # TODO:
