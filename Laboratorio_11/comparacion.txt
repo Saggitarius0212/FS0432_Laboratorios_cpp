@@ -1,0 +1,19 @@
+Comparación entre el método de Jacobi y Gauss-Seidel
+
+Número de iteraciones
+Jacobi: 4664
+Gauss-Seidel: 2509
+
+Error de Convergencia
+Jacobi: 9.998846826897445e-09
+Gauss-Seidel: 9.961051115892072e-09
+
+Error Máximo con respecto Solución Analítica
+Jacobi: 1.1612814115033454e-05
+Gauss-Seidel: 1.4153431404366479e-05
+
+Los dos métodos tenía las mismas condiciones iniciales y de fronter para una comparación justa.
+
+Como se puede observar el método de Gauss-Seidel posee menos interaciones que el método Jacobi, con una diferencia de 2155 iteraciones para este caso. Con esta información se concluye que el primero en alcanzar la tolerancia establecida fue el método Gauss-Seidel, el cual converge con mayor rapidez.
+
+Las gráficas de calor son similares a la solución analítica para ambos métodos, por lo que ambos hacen un buen trabajo aproximando el resultado analítico buscado, además de que ambos presentan errors absoluto con la solución exacta bastante bajos, del orden de 1e-5.

@@ -47,6 +47,7 @@ def graficar_mapa(u, titulo, nombre_archivo):
 def graficar_error_convergencia(errores, nombre_archivo):
     plt.figure(figsize=(6, 4))
     plt.plot(errores)
+    plt.yscale("log")
     plt.xlabel("Iteracion")
     plt.ylabel("Error de convergencia")
     plt.title("Error de convergencia")
@@ -153,7 +154,7 @@ def main():
 	graficar_mapa(
 		error_absoluto,
 		"Error Absoluto Gauss-Seidel",
-		"error_absoluto_heatmap.png"
+		"error_absoluto_gaussseidel_heatmap.png"
 	)
 
 	graficar_error_convergencia(
