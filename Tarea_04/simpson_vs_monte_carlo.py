@@ -18,7 +18,7 @@ t_s = []
 err_mc = []
 err_s = []
 
-for d in range(1,100):
+for d in range(1,100, 10):
 
 	valor_analitico = (2.0 / np.pi)**d
 
@@ -29,7 +29,7 @@ for d in range(1,100):
 # MÉTODO DE MONTE CARLO
 # ---------------------------------------------------------
 
-	N_total_mc = 10**5
+	N_total_mc = 10**6
 
 	t0_mc = time.time()
 	
@@ -64,41 +64,46 @@ for d in range(1,100):
 # ---------------------------------------------------------
 # MÉTODO DE SIMPSON
 # ---------------------------------------------------------
+	if d < 9:
+		N_simpson = 10
+		N_total_simpson = N_simpson**d
 
-	#N_simpson = 10
-	#N_total_simpson = N_simpson**d
+		t0_simpson = time.time()
 
-	#t0_simpson = time.time()
+		x_1d = np.linspace(0, 1, N_simpson)
+		malla = np.meshgrid(*[x_1d] * d, indexing="ij")
 
-	#x_1d = np.linspace(0, 1, N_simpson)
-	#malla = np.meshgrid(*[x_1d] * d, indexing="ij")
+		Z = np.prod([np.sin(np.pi * m) for m in malla], axis=0)
 
-	#Z = np.prod([np.sin(np.pi * m) for m in malla], axis=0)
+		integral_simpson = Z
+		for _ in range(d):
+			integral_simpson = simpson(integral_simpson, x=x_1d, axis=0)
 
-	#integral_simpson = Z
-	#for _ in range(d):
-		#integral_simpson = simpson(integral_simpson, x=x_1d, axis=0)
-
-	#t1_simpson = time.time()
+		t1_simpson = time.time()
 	
-	#diferencia_ts = t1_simpson - t0_simpson
+		diferencia_ts = t1_simpson - t0_simpson
 	
-	#error_simpson = abs(integral_simpson - valor_analitico)
+		error_simpson = abs(integral_simpson - valor_analitico)
 
-	#t_s.append(diferencia_ts)
-	#err_s.append(error_simpson)
+		t_s.append(diferencia_ts)
+		err_s.append(error_simpson)
 	
-	#print(
-		#f"Simpson:     {integral_simpson:.8f} "
-		#f"(Error: {error_simpson:.8f}, Tiempo: {diferencia_ts:.4f}s)"
-	#)
-	
+		print(
+			f"Simpson:     {integral_simpson:.8f} "
+			f"(Error: {error_simpson:.8f}, Tiempo: {diferencia_ts:.4f}s)"
+		)
+	else:
+		t_s.append(None)
+		err_s.append(None)
+		print("Simpson: killed")
+		
 	dim.append(d)
 	
 plt.figure()
 
-#plt.plot(dim, t_s ,label="Tiempos Simpson")
+plt.plot(dim, t_s ,label="Tiempos Simpson")
 plt.plot(dim, t_mc,label="Tiempos Monte Carlo")
 
+plt.grid(True)
 plt.legend()
 plt.show()
