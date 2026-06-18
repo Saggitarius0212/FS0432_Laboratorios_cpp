@@ -138,5 +138,6 @@ anim = FuncAnimation(
 )
 
 anim.save("calor_2d.gif", writer="pillow", fps=15)
+print("calor_2d.gif descargado...")
 
 plt.show()
