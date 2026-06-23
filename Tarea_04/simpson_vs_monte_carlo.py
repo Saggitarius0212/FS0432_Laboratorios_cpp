@@ -17,11 +17,15 @@ t_mc =[]
 t_s = []
 err_mc = []
 err_s = []
+analitico = []
+int_mc = []
+int_s = []
 
 for d in range(1, 50, 1):
 
 	valor_analitico = (2.0 / np.pi)**d
-
+	
+	analitico.append(valor_analitico)
 
 	print(f"--- Integración en d={d} ---")
 	print(f"Analítico:   {valor_analitico:.15f}")
@@ -46,6 +50,8 @@ for d in range(1, 50, 1):
 
 
 	integral_mc = (1/N_total_mc)*sumatoria
+
+	int_mc.append(integral_mc)
 
 	t1_mc = time.time()
 	
@@ -79,6 +85,8 @@ for d in range(1, 50, 1):
 		for _ in range(d):
 			integral_simpson = simpson(integral_simpson, x=x_1d, axis=0)
 
+		int_s.append(integral_simpson)
+		
 		t1_simpson = time.time()
 	
 		diferencia_ts = t1_simpson - t0_simpson
@@ -95,6 +103,7 @@ for d in range(1, 50, 1):
 	else:
 		t_s.append(None)
 		err_s.append(None)
+		int_s.append(None)
 		print("Simpson: killed")
 		
 	dim.append(d)
@@ -130,4 +139,22 @@ plt.legend()
 
 plt.savefig("grafico_errores.png")
 print("grafico_errores.png descargado...")
+plt.show()
+
+plt.figure()
+
+plt.plot(dim, int_s ,label="Valor Simpson")
+plt.plot(dim, int_mc,label="Valor Monte Carlo")
+plt.plot(dim, analitico,label="Valor Analítico")
+
+plt.yscale("log")
+plt.xlabel("Dimensiòn")
+plt.ylabel("Valor")
+plt.title("Valor vs Dimensiòn")
+
+plt.grid(True)
+plt.legend()
+
+plt.savefig("grafico_valor.png")
+print("grafico_valor.png descargado...")
 plt.show()
