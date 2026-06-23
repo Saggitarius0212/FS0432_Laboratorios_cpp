@@ -18,7 +18,7 @@ t_s = []
 err_mc = []
 err_s = []
 
-for d in range(1,100, 10):
+for d in range(1, 50, 1):
 
 	valor_analitico = (2.0 / np.pi)**d
 
@@ -64,7 +64,7 @@ for d in range(1,100, 10):
 # ---------------------------------------------------------
 # MÉTODO DE SIMPSON
 # ---------------------------------------------------------
-	if d < 9:
+	if d < 8:
 		N_simpson = 10
 		N_total_simpson = N_simpson**d
 
@@ -104,6 +104,30 @@ plt.figure()
 plt.plot(dim, t_s ,label="Tiempos Simpson")
 plt.plot(dim, t_mc,label="Tiempos Monte Carlo")
 
+plt.xlabel("Dimensión")
+plt.ylabel("Tiempo")
+plt.title("Tiempo vs Dimensión")
+
 plt.grid(True)
 plt.legend()
+
+plt.savefig("grafico_tiempos.png")
+print("grafico_tiempos.png descargado...")
+plt.show()
+
+plt.figure()
+
+plt.plot(dim, err_s ,label="Error Simpson")
+plt.plot(dim, err_mc,label="Error Monte Carlo")
+
+plt.yscale("log")
+plt.xlabel("Dimensiòn")
+plt.ylabel("Error")
+plt.title("Error vs Dimensiòn")
+
+plt.grid(True)
+plt.legend()
+
+plt.savefig("grafico_errores.png")
+print("grafico_errores.png descargado...")
 plt.show()

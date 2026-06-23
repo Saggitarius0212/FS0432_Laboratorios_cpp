@@ -1,0 +1,198 @@
+--- Integración en d=1 ---
+Analítico:   0.636619772367581
+Monte Carlo: 0.636969193505260 (Error: 0.000349421137679, Tiempo: 6.0667s)
+Simpson:     0.63685810 (Error: 0.00023833, Tiempo: 0.0003s)
+--- Integración en d=2 ---
+Analítico:   0.405284734569351
+Monte Carlo: 0.405261313943022 (Error: 0.000023420626329, Tiempo: 6.1301s)
+Simpson:     0.40558824 (Error: 0.00030350, Tiempo: 0.0005s)
+--- Integración en d=3 ---
+Analítico:   0.258012275465596
+Monte Carlo: 0.257758311165831 (Error: 0.000253964299765, Tiempo: 6.1305s)
+Simpson:     0.25830216 (Error: 0.00028988, Tiempo: 0.0006s)
+--- Integración en d=4 ---
+Analítico:   0.164255716074949
+Monte Carlo: 0.164324118754200 (Error: 0.000068402679250, Tiempo: 6.1708s)
+Simpson:     0.16450182 (Error: 0.00024610, Tiempo: 0.0014s)
+--- Integración en d=5 ---
+Analítico:   0.104568436577708
+Monte Carlo: 0.104863664650414 (Error: 0.000295228072706, Tiempo: 6.1971s)
+Simpson:     0.10476432 (Error: 0.00019588, Tiempo: 0.0108s)
+--- Integración en d=6 ---
+Analítico:   0.066570334290935
+Monte Carlo: 0.066580681357131 (Error: 0.000010347066196, Tiempo: 6.2104s)
+Simpson:     0.06672000 (Error: 0.00014967, Tiempo: 0.0860s)
+--- Integración en d=7 ---
+Analítico:   0.042379991062729
+Monte Carlo: 0.042537052416543 (Error: 0.000157061353814, Tiempo: 6.2629s)
+Simpson:     0.04249117 (Error: 0.00011118, Tiempo: 0.9398s)
+--- Integración en d=8 ---
+Analítico:   0.026979940263294
+Monte Carlo: 0.026974717328841 (Error: 0.000005222934454, Tiempo: 6.2628s)
+Simpson: killed
+--- Integración en d=9 ---
+Analítico:   0.017175963428909
+Monte Carlo: 0.017201407667244 (Error: 0.000025444238334, Tiempo: 6.3025s)
+Simpson: killed
+--- Integración en d=10 ---
+Analítico:   0.010934557928306
+Monte Carlo: 0.010921024999603 (Error: 0.000013532928703, Tiempo: 6.3047s)
+Simpson: killed
+--- Integración en d=11 ---
+Analítico:   0.006961155779258
+Monte Carlo: 0.006948599258087 (Error: 0.000012556521171, Tiempo: 6.3419s)
+Simpson: killed
+--- Integración en d=12 ---
+Analítico:   0.004431609407607
+Monte Carlo: 0.004412126619978 (Error: 0.000019482787629, Tiempo: 6.3818s)
+Simpson: killed
+--- Integración en d=13 ---
+Analítico:   0.002821250172293
+Monte Carlo: 0.002830052417825 (Error: 0.000008802245533, Tiempo: 6.4067s)
+Simpson: killed
+--- Integración en d=14 ---
+Analítico:   0.001796063642477
+Monte Carlo: 0.001792626553338 (Error: 0.000003437089139, Tiempo: 6.4224s)
+Simpson: killed
+--- Integración en d=15 ---
+Analítico:   0.001143409627231
+Monte Carlo: 0.001138887607329 (Error: 0.000004522019902, Tiempo: 6.4333s)
+Simpson: killed
+--- Integración en d=16 ---
+Analítico:   0.000727917176611
+Monte Carlo: 0.000726894383561 (Error: 0.000001022793049, Tiempo: 6.4617s)
+Simpson: killed
+--- Integración en d=17 ---
+Analítico:   0.000463406467277
+Monte Carlo: 0.000463243654181 (Error: 0.000000162813095, Tiempo: 6.4854s)
+Simpson: killed
+--- Integración en d=18 ---
+Analítico:   0.000295013719711
+Monte Carlo: 0.000295818406117 (Error: 0.000000804686405, Tiempo: 6.4972s)
+Simpson: killed
+--- Integración en d=19 ---
+Analítico:   0.000187811567088
+Monte Carlo: 0.000188670223759 (Error: 0.000000858656671, Tiempo: 6.5336s)
+Simpson: killed
+--- Integración en d=20 ---
+Analítico:   0.000119564557087
+Monte Carlo: 0.000119586342821 (Error: 0.000000021785734, Tiempo: 6.5507s)
+Simpson: killed
+--- Integración en d=21 ---
+Analítico:   0.000076117161116
+Monte Carlo: 0.000077486307706 (Error: 0.000001369146590, Tiempo: 6.5967s)
+Simpson: killed
+--- Integración en d=22 ---
+Analítico:   0.000048457689783
+Monte Carlo: 0.000048412726224 (Error: 0.000000044963559, Tiempo: 6.6191s)
+Simpson: killed
+--- Integración en d=23 ---
+Analítico:   0.000030849123439
+Monte Carlo: 0.000031285456726 (Error: 0.000000436333287, Tiempo: 6.6379s)
+Simpson: killed
+--- Integración en d=24 ---
+Analítico:   0.000019639161942
+Monte Carlo: 0.000019611281171 (Error: 0.000000027880770, Tiempo: 6.6711s)
+Simpson: killed
+--- Integración en d=25 ---
+Analítico:   0.000012502678805
+Monte Carlo: 0.000012677374728 (Error: 0.000000174695924, Tiempo: 6.6920s)
+Simpson: killed
+--- Integración en d=26 ---
+Analítico:   0.000007959452535
+Monte Carlo: 0.000008063443826 (Error: 0.000000103991291, Tiempo: 6.7044s)
+Simpson: killed
+--- Integración en d=27 ---
+Analítico:   0.000005067144861
+Monte Carlo: 0.000005045085469 (Error: 0.000000022059392, Tiempo: 6.7419s)
+Simpson: killed
+--- Integración en d=28 ---
+Analítico:   0.000003225844608
+Monte Carlo: 0.000003254103023 (Error: 0.000000028258415, Tiempo: 6.7606s)
+Simpson: killed
+--- Integración en d=29 ---
+Analítico:   0.000002053636460
+Monte Carlo: 0.000002025126148 (Error: 0.000000028510311, Tiempo: 6.7864s)
+Simpson: killed
+--- Integración en d=30 ---
+Analítico:   0.000001307385576
+Monte Carlo: 0.000001265642898 (Error: 0.000000041742678, Tiempo: 6.7912s)
+Simpson: killed
+--- Integración en d=31 ---
+Analítico:   0.000000832307508
+Monte Carlo: 0.000000793552253 (Error: 0.000000038755255, Tiempo: 6.8138s)
+Simpson: killed
+--- Integración en d=32 ---
+Analítico:   0.000000529863416
+Monte Carlo: 0.000000473596044 (Error: 0.000000056267372, Tiempo: 6.8434s)
+Simpson: killed
+--- Integración en d=33 ---
+Analítico:   0.000000337321527
+Monte Carlo: 0.000000351100547 (Error: 0.000000013779020, Tiempo: 6.8452s)
+Simpson: killed
+--- Integración en d=34 ---
+Analítico:   0.000000214745554
+Monte Carlo: 0.000000215567096 (Error: 0.000000000821542, Tiempo: 6.8697s)
+Simpson: killed
+--- Integración en d=35 ---
+Analítico:   0.000000136711266
+Monte Carlo: 0.000000139363764 (Error: 0.000000002652498, Tiempo: 6.9045s)
+Simpson: killed
+--- Integración en d=36 ---
+Analítico:   0.000000087033095
+Monte Carlo: 0.000000086637625 (Error: 0.000000000395470, Tiempo: 6.9157s)
+Simpson: killed
+--- Integración en d=37 ---
+Analítico:   0.000000055406989
+Monte Carlo: 0.000000052980525 (Error: 0.000000002426464, Tiempo: 6.9393s)
+Simpson: killed
+--- Integración en d=38 ---
+Analítico:   0.000000035273185
+Monte Carlo: 0.000000036833706 (Error: 0.000000001560522, Tiempo: 6.9626s)
+Simpson: killed
+--- Integración en d=39 ---
+Analítico:   0.000000022455607
+Monte Carlo: 0.000000020699956 (Error: 0.000000001755651, Tiempo: 6.9923s)
+Simpson: killed
+--- Integración en d=40 ---
+Analítico:   0.000000014295683
+Monte Carlo: 0.000000015804148 (Error: 0.000000001508465, Tiempo: 7.0215s)
+Simpson: killed
+--- Integración en d=41 ---
+Analítico:   0.000000009100915
+Monte Carlo: 0.000000008566278 (Error: 0.000000000534636, Tiempo: 7.0348s)
+Simpson: killed
+--- Integración en d=42 ---
+Analítico:   0.000000005793822
+Monte Carlo: 0.000000006420989 (Error: 0.000000000627167, Tiempo: 7.0593s)
+Simpson: killed
+--- Integración en d=43 ---
+Analítico:   0.000000003688462
+Monte Carlo: 0.000000003490937 (Error: 0.000000000197525, Tiempo: 7.0878s)
+Simpson: killed
+--- Integración en d=44 ---
+Analítico:   0.000000002348148
+Monte Carlo: 0.000000002074998 (Error: 0.000000000273150, Tiempo: 7.1180s)
+Simpson: killed
+--- Integración en d=45 ---
+Analítico:   0.000000001494877
+Monte Carlo: 0.000000001441989 (Error: 0.000000000052888, Tiempo: 7.1407s)
+Simpson: killed
+--- Integración en d=46 ---
+Analítico:   0.000000000951668
+Monte Carlo: 0.000000000928886 (Error: 0.000000000022783, Tiempo: 7.1522s)
+Simpson: killed
+--- Integración en d=47 ---
+Analítico:   0.000000000605851
+Monte Carlo: 0.000000000877160 (Error: 0.000000000271309, Tiempo: 7.1787s)
+Simpson: killed
+--- Integración en d=48 ---
+Analítico:   0.000000000385697
+Monte Carlo: 0.000000000380918 (Error: 0.000000000004778, Tiempo: 7.2087s)
+Simpson: killed
+--- Integración en d=49 ---
+Analítico:   0.000000000245542
+Monte Carlo: 0.000000000236533 (Error: 0.000000000009009, Tiempo: 7.2095s)
+Simpson: killed
+grafico_tiempos.png descargado...
+grafico_errores.png descargado...
